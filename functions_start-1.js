@@ -46,7 +46,7 @@ function multTable(row, col) {
     var x;
     for (var i = 1; i < col; ++i) {
         table = table + "<tr>";
-        for (var j = 1; j < row; ++j) {
+        for (var j = 1; j < row + 2; ++j) {
             x = i * j;
             table = table + "<td>" + x + "</td>";
         }
@@ -62,7 +62,7 @@ function multTable(row, col) {
  * @returns {number}
  */
 function factorial(n) {
-    var result = 0;
+    var result = 1;
     for (var i = n; i > 1; i--) {
         result = result * i;
     }
