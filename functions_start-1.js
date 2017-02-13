@@ -1,4 +1,4 @@
-
+5
 
 //THESE FUNCTIONS CONTAIN BUGS!!!!!
 
@@ -27,7 +27,7 @@ function listTriangularNumbers(n) {
     var array = [];
     for (i = 1; i <= n; ++i) {
         num = i;
-        for (j = i; j >= 1; --j) {
+        for (j = i - 1; j >= 1; --j) {
             num = num + j;
         }
         array.push(num);
@@ -77,7 +77,7 @@ function factorial(n) {
  */
 function combinations(n, k) {
     var c;
-    c = factorial(n) / factorial(k) * (factorial(n - k));
+    c = factorial(n) / factorial(k) / (factorial(n - k));
     return c;
 }
 
